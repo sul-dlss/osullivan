@@ -25,4 +25,13 @@ describe IIIF::V3::Service do
     end
   end
 
+  describe '#validate' do
+    # TODO:
+    # * check for required keys
+    # * type check Array-only values
+    # * type check String-only values
+    # * type check Integer-only values
+    # * type check AbstractResource-only values
+  end
+
 end

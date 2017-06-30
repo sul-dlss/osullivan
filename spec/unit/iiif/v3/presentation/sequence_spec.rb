@@ -94,6 +94,7 @@ describe IIIF::V3::Presentation::Sequence do
   end
 
   describe '#validate' do
+    # A Sequence may have an id and must not have more than one.
     it 'raises an error if viewing_hint isn\'t an allowable value' do
       subject['viewing_hint'] = 'foo'
       expect { subject.validate }.to raise_error IIIF::V3::Presentation::IllegalValueError

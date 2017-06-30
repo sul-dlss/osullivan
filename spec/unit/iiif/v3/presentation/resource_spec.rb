@@ -16,4 +16,7 @@ describe IIIF::V3::Presentation::Resource do
     it_behaves_like 'it has the appropriate methods for string-only keys v3'
   end
 
+  describe '#validate' do
+    # A content resource must have exactly one id unless it is embedded in the response, and it must be the http(s) URI at which the resource is published.
+  end
 end

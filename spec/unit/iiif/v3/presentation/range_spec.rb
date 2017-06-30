@@ -49,6 +49,8 @@ describe IIIF::V3::Presentation::Range do
   end
 
   describe '#validate' do
+    # A Range must have exactly one id, and it must be an http(s) URI.
+
   end
 
 end

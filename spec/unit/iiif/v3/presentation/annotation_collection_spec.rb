@@ -33,4 +33,8 @@ describe IIIF::V3::Presentation::AnnotationCollection do
     it_behaves_like 'it has the appropriate methods for any-type keys v3'
   end
 
+  describe '#validate' do
+    # An AnnotationCollection must have exactly one id, and it must be an http(s) URI.
+  end
+
 end

@@ -4,4 +4,8 @@ describe IIIF::V3::Presentation::AnnotationPage do
     it_behaves_like 'it has the appropriate methods for array-only keys v3'
   end
 
+  describe '#validate' do
+    # An AnnotationPage must have exactly one id, and it must be the http(s) URI at which it is published.
+  end
+
 end

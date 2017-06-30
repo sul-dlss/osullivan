@@ -50,6 +50,7 @@ describe IIIF::V3::Presentation::Collection do
   end
 
   describe '#validate' do
+    # A Collection must have exactly one id, and it must be the http(s) URI at which it is published.
   end
 
 end

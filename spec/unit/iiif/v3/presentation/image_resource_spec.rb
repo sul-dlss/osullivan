@@ -10,4 +10,8 @@ describe IIIF::V3::Presentation::ImageResource do
     it_behaves_like 'it has the appropriate methods for integer-only keys v3'
   end
 
+  describe '#validate' do
+
+  end
+
 end

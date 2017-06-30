@@ -5,6 +5,7 @@ describe IIIF::V3::Presentation::Annotation do
   end
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   describe '#validate' do
     it 'raises an error if time_mode isn\'t an allowable value' do
       subject['time_mode'] = 'foo'
@@ -13,12 +14,19 @@ describe IIIF::V3::Presentation::Annotation do
   end
 =======
   # are we producing syntactically correct annotations?
+=======
+  describe '#validate' do
+    # are we producing syntactically correct annotations?
 
-  # required:
-  #   id (URI?)
-  #   type "Annotation"
-  #   motivation  ('painting' unless ...)
-  #   target (URI?)
+    # required:
+    #   id (URI?)  : Annotation must have exactly one id, and the Annotation’s representation should be published at that URI.
+    #   type "Annotation"
+    #   motivation  ('painting' unless ...)
+    #   target (URI?)
+
+  end
+>>>>>>> v3 specs: added describe block for #validate method (to be filled in soon)
+
 
   # should
   #   body
