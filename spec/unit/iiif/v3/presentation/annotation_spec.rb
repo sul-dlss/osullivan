@@ -4,17 +4,6 @@ describe IIIF::V3::Presentation::Annotation do
     it_behaves_like 'it has the appropriate methods for abstract_resource_only_keys v3'
   end
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  describe '#validate' do
-    it 'raises an error if time_mode isn\'t an allowable value' do
-      subject['time_mode'] = 'foo'
-      expect { subject.validate }.to raise_error IIIF::V3::Presentation::IllegalValueError
-    end
-  end
-=======
-  # are we producing syntactically correct annotations?
-=======
   describe '#validate' do
     # are we producing syntactically correct annotations?
 
@@ -23,10 +12,11 @@ describe IIIF::V3::Presentation::Annotation do
     #   type "Annotation"
     #   motivation  ('painting' unless ...)
     #   target (URI?)
-
+    it 'raises an error if time_mode isn\'t an allowable value' do
+      subject['time_mode'] = 'foo'
+      expect { subject.validate }.to raise_error IIIF::V3::Presentation::IllegalValueError
+    end
   end
->>>>>>> v3 specs: added describe block for #validate method (to be filled in soon)
-
 
   # should
   #   body
@@ -139,5 +129,4 @@ describe IIIF::V3::Presentation::Annotation do
       "target":"http://tomcrane.github.io/scratch/manifests/3/canvas/99"
 }
 
->>>>>>> v3 annotation spec: some notes towards writing better tests
 end
