@@ -31,7 +31,6 @@ module IIIF
         def validate
           super
 
-          # time mode values
           if self.has_key?('choice_hint')
             unless self.legal_choice_hint_values.include?(self['choice_hint'])
               m = "choiceHint for #{self.class} must be one of #{self.legal_choice_hint_values}."

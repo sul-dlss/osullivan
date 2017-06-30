@@ -17,6 +17,7 @@ describe IIIF::V3::Presentation::Canvas do
 
   describe '#validate' do
     # A Canvas must have exactly one id, and it must be an http(s) URI. The Canvas’s JSON representation should be published at that URI.
+    # all members of content are of type AnnotationPage
   end
 
   describe '#initialize' do

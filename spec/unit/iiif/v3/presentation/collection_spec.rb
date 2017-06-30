@@ -51,6 +51,19 @@ describe IIIF::V3::Presentation::Collection do
 
   describe '#validate' do
     # A Collection must have exactly one id, and it must be the http(s) URI at which it is published.
+
+    # from v3 doc but v2?
+    # collections must have a label, and should have metadata and description properties
+    # manifests must not be embedded within collections
+    # Collections have three list-based properties to express membership:
+    #   collections - References to sub-collections of the current collection. Each referenced collection must have the appropriate id, type and label, and may be embedded in its entirety.
+    #   manifests - References to manifests contained within the current collection. Each referenced manifest must have the appropriate id, type and label.
+    #   members - In cases where the order of a collection is significant, members can be used to interleave both collection and manifest resources
+
+
+    # from v2?
+    # each member of collections and manifests must be a Hash
+    # each member of collections and manifests MUST have id, type, and label
   end
 
 end

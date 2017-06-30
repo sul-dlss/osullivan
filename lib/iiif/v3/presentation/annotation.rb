@@ -32,7 +32,6 @@ module IIIF
         def validate
           super
 
-          # time mode values
           if self.has_key?('time_mode')
             unless self.legal_time_mode_values.include?(self['time_mode'])
               m = "timeMode for #{self.class} must be one of #{self.legal_time_mode_values}."
