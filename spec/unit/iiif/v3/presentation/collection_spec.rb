@@ -51,6 +51,7 @@ describe IIIF::V3::Presentation::Collection do
 
   describe '#validate' do
     # A Collection must have exactly one id, and it must be the http(s) URI at which it is published.
+    # A Collection must have at least one label.
 
     # from v3 doc but v2?
     # collections must have a label, and should have metadata and description properties

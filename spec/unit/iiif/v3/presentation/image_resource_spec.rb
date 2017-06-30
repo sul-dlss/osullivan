@@ -10,6 +10,7 @@ describe IIIF::V3::Presentation::ImageResource do
     it_behaves_like 'it has the appropriate methods for integer-only keys v3'
   end
 
+  # note:  "Rename Section to "Content Resources"."  - looks for MUST for content resources
   describe '#validate' do
 
   end

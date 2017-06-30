@@ -12,7 +12,7 @@ module IIIF
         end
 
         def any_type_keys # these are allowed on all classes
-          %w{ label description thumbnail attribution rights logo see_also
+          %w{ label description thumbnail attribution logo see_also
           related within }
         end
 
@@ -21,7 +21,7 @@ module IIIF
         end
 
         def array_only_keys
-          %w{ metadata }
+          %w{ metadata rights}
         end
 
         def abstract_resource_only_keys

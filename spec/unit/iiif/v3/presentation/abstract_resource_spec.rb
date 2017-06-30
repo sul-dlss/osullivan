@@ -118,6 +118,7 @@ describe IIIF::V3::Presentation::AbstractResource do
 
     describe 'runs the validations' do
       # Test this here because there's nothing to validate on the superclass (Subject)
+      # rights The value must be an array of strings, each being a URI
       let(:error) { IIIF::V3::Presentation::MissingRequiredKeyError }
       before(:each) { subject.delete('id') }
       it 'raises exceptions' do

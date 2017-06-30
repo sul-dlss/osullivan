@@ -58,6 +58,7 @@ describe IIIF::V3::Presentation::Manifest do
 
   describe '#validate' do
     # A Manifest must have exactly one id, and it must be the http(s) URI at which it is published.
+    # A Manifest must have at least one label
     it 'raises an error if there is no id' do
       subject.label = 'Book 1'
       expect { subject.validate }.to raise_error IIIF::V3::Presentation::MissingRequiredKeyError

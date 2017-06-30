@@ -37,6 +37,7 @@ module IIIF
 
         def validate
           # all members of content are of type AnnotationPage
+          # A canvas MUST have exactly one width and one height, or exactly one duration. It may have width, height and duration.
           super
         end
       end

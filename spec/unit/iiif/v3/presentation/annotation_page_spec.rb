@@ -7,6 +7,7 @@ describe IIIF::V3::Presentation::AnnotationPage do
   describe '#validate' do
     # An AnnotationPage must have exactly one id, and it must be the http(s) URI at which it is published.
     # Each member or resources must be a kind of Annotation
+    # An AnnotationCollection must have at least one label
   end
 
 end
